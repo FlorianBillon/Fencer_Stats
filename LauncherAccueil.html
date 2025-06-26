@@ -1,11 +1,11 @@
-import { Acceuil } from "./Acceuil.js"; // ✅ Import correct
+import { Acceuil } from "./Acceuil.js";
 
 export class LauncherAccueil {
   static aAcceuil = null;
 
   constructor() {
     if (!LauncherAccueil.aAcceuil) {
-      LauncherAccueil.aAcceuil = new Acceuil(); // ✅ Acceuil est bien défini
+      LauncherAccueil.aAcceuil = new Acceuil();
     }
   }
 
@@ -18,10 +18,8 @@ export class LauncherAccueil {
   }
 }
 
-// ✅ Assure-toi que l'export est bien écrit
 export default LauncherAccueil;
 
-// Exécution de la classe
 const launcher = new LauncherAccueil();
 launcher.main();
 
